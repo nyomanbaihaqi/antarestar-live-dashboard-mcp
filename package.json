@@ -1,0 +1,23 @@
+{
+  "name": "antarestar-live-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server read-only untuk data Antarestar Live Dashboard (buat Hermes / AI agent).",
+  "scripts": {
+    "dev": "tsx watch src/stdio.ts",
+    "stdio": "tsx src/stdio.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": { "node": ">=18" }
+}
